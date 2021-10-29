@@ -15,7 +15,7 @@ function isAuthorized(req, res, next) {
 
 router.get('/', isAuthorized, passport.authenticate('discord'));
 router.get('/redirect', passport.authenticate('discord', {
-    failureRedirect: '/failure',
+    failureRedirect: '/',
     successRedirect: '/'
 }));
 
