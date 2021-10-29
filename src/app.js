@@ -35,10 +35,11 @@ app.use('/dashboard', dashboardRoute);
 
 function isAuthorized(req, res, next) {
     if(req.user) {
-        console.log("User is logged in");
-        res.render("loggedin");
+        console.log(req.user);
+        res.render("loggedin", {
+            username: req.user.username
+        });
     } else {
-        console.log("User is not logged in");
         res.render("noaccount");
     }
 }
