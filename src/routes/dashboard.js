@@ -4,17 +4,15 @@ const router = express.Router();
 // Check if an user has logged in into discord
 function isAuthorized(req, res, next) {
     if(req.user) {
-        console.log("User is logged in");
         console.log(req.user);
         next();
     } else {
-        console.log("User is not logged in");
-        res.redirect('/');
+        res.redirect('/auth');
     }
 }
 
 router.get('/', isAuthorized, (req, res) => {
-    res.send(200);
+    res.render("dashboard");
 });
 
 router.get('/settings', isAuthorized, (req, res) => {
