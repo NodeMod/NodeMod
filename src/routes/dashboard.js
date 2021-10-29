@@ -12,7 +12,9 @@ function isAuthorized(req, res, next) {
 }
 
 router.get('/', isAuthorized, (req, res) => {
-    res.render("dashboard");
+    res.render("dashboard", {
+        username: req.user.username
+    });
 });
 
 router.get('/settings', isAuthorized, (req, res) => {
