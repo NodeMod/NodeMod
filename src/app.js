@@ -11,13 +11,15 @@ db.then(() => console.log('Connected to Database')) // Connects to the database
     .catch(err => console.log(err)); // Logs the error if there is one
 
 const authRoute = require('./routes/auth'); // Authorization route for the website
+const dashboardRoute = require('./routes/dashboard'); // Route for the bot dashboard
 
 app.use(session({
     secret: 'some random secret',
     cookie: {
         maxAge: 60000 * 60 * 24
     },
-    saveUninitialized: false
+    saveUninitialized: false,
+    name: 'discord-oauth2'
 }))
 
 // Passport
@@ -26,6 +28,7 @@ app.use(passport.session());
 
 // Applies auth.js middleware route
 app.use('/auth', authRoute);
+app.use('/dashboard', dashboardRoute);
 
 app.listen(PORT, () => {
     console.log("Now listening to requests on port "+PORT);
