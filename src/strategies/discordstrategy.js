@@ -3,12 +3,10 @@ const passport = require('passport');
 const DiscordUser = require('../models/DiscordUser')
 
 passport.serializeUser((user, done) => {
-    console.log("Serializing");
     done(null, user.id);
 })
 
 passport.deserializeUser(async (id, done) => {
-    console.log("Deserializing");
     const user = await DiscordUser.findById(id);
     if(user) done(null, user);
 })
@@ -29,7 +27,9 @@ passport.use(new DiscordStrategy({
         } else {
             const newUser = await DiscordUser.create({
                 discordId: profile.id,
-                username: profile.username
+                username: profile.username,
+                discriminator: profile.discriminator,
+                avatar: profile.avatar
             });
             const savedUser = await newUser.save();
             done(null, savedUser);
