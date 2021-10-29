@@ -33,8 +33,18 @@ app.use(passport.session());
 app.use('/auth', authRoute);
 app.use('/dashboard', dashboardRoute);
 
-app.get('/', (req, res) => {
-    res.render('home');
+function isAuthorized(req, res, next) {
+    if(req.user) {
+        console.log("User is logged in");
+        res.render("loggedin");
+    } else {
+        console.log("User is not logged in");
+        res.render("noaccount");
+    }
+}
+
+app.get('/', isAuthorized, (req, res) => {
+
 })
 
 app.listen(PORT, () => {
