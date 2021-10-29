@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NodeMod</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e6cce9c8da.js" crossorigin="anonymous"></script>
+        <style>
+            body {
+                /*background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(26, 26, 26) 100%) */
+                background-color: #141414; 
+                font-family: 'Roboto', sans-serif;
+                color: white;
+            }
+
+            .titleDivContainer {
+                text-align: center;
+            }
+
+            .titleDiv {
+                border-radius: 10px;
+                width: 100%;
+                height: 350px;
+                text-align: center;
+            }
+
+            .title {
+                padding-top: 10px;
+                text-align: center;
+                font-size: 80px;
+            }
+
+            .description {
+                padding-top: 10px;
+                font-size: 35px;
+            }
+
+            .goBackButton {
+                background-color: rgb(90, 90, 233);
+                border-radius: 10px;
+                color: white;
+                width: 160px;
+                height: 60px;
+                font-size: 25px;
+                border-color: transparent;
+                transition: 0.2s;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+            }
+
+            .goBackButton:hover {
+                transition: 0.3s;
+                background-color: #7289da;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="titleDivContainer">
+            <div class="titleDiv">
+                <h1 class="title">NodeMod<i class="fab fa-discord"></i></h2>
+                <p class="description">You are already logged in
+                    <br><b class="loggedIn">Logged in as <%= username %></b>
+                </p>
+                <button class="goBackButton">Go Back</button>
+            </div>
+        </div>
+    </body>
+</html>
