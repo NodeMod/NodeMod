@@ -7,6 +7,7 @@ const session = require('express-session');
 const passport = require('passport');
 const db = require('./database/database');
 const path = require('path');
+const functions = require('./functions');
 
 db.then(() => console.log('Connected to Database')) // Connects to the database
     .catch(err => console.log(err)); // Logs the error if there is one
@@ -20,7 +21,7 @@ app.use(session({
         maxAge: 60000 * 60 * 24
     },
     saveUninitialized: false,
-    name: 'discord-oauth2'
+    name: 'discord-oauth2',
 }))
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '../views'));
