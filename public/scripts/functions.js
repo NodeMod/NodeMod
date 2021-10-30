@@ -17,3 +17,7 @@ function logOut() {
 function reload() {
     location.reload();
 }
+
+function createBot() {
+    console.log("Create bot");
+}
