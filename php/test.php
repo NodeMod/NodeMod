@@ -9,7 +9,7 @@ if(is_null($botname)) {
 }
 
 $file = fopen("test.txt","w");
-fwrite($file, "test");
+fwrite($file, $botname);
 
 fclose($file);
 ?>
