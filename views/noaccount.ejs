@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>NodeMod</title>
+        <title>NodeMod - Home</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/e6cce9c8da.js" crossorigin="anonymous"></script>
         <%- include('../public/partials/functions.ejs') -%>
+        <link rel="icon" href="https://o.remove.bg/downloads/e8e1b41b-0b9b-4eff-8215-988408a78782/logo_nodemod__1_-removebg-preview.png">
         <style>
             body {
                 /*background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(26, 26, 26) 100%) */
@@ -96,17 +97,7 @@
             }
 
             .whyTitle {
-                padding-top: 50px;
-                font-size: 50px;
-            }
-
-            .avatar {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-            }
-
-            .loggedIn {
+                padding-top: 10px;
                 font-size: 50px;
             }
         </style>
@@ -115,26 +106,24 @@
         <div class="header">
             <button class="headerButton" onclick="reload()"><i class="fas fa-home"></i> Home</button>
             <button class="headerButton" onclick="openDashboard()"><i class="fas fa-desktop"></i> Dashboard</button>
-            <button class="headerButton" onclick="logOut()"><i class="fas fa-user-slash"></i> Log Out</button>
+            <button class="headerButton" onclick="openAuth()"><i class="fas fa-user"></i> Log In</button>
         </div>
 
         <div class="titleDivContainer">
             <div class="titleDiv">
-                <h1 class="title">NodeMod<i class="fab fa-discord"></i></h2>
-                <p class="description">The powerful Bot Hosting solution<br>Free. Forever. NodeMod.<br>
-                    <img class="avatar" src=<%= avatar %>></b>
-                    <b class="loggedIn"><%= username %>#<%= discriminator %></b>
-                </p>
-                <button class="botsButton" onclick="openDashboard()">Dashboard</button>
+                <h1 class="title">NodeMod <i class="fab fa-discord"></i></h2>
+                <p class="description">Build and host Discord bots. Fast & Easy<br>NodeMod is the best bot hosting. Free. Forever.</p>
+                <button class="botsButton" onclick="openAuth()">Get Started</button>
             </div>
         </div>
 
         <div class="container">
             <div class="background">
-                <h1 class="whyTitle">What does NodeMod offers?</h2>
+                <h1 class="whyTitle">So why should you use it?</h2>
                 <p class="description">NodeMod offers a free, easy to use and performant Bot Hosting.
                     There are lot of default <br>customizations you can add to the bot: Moderation, Reaction Roles and many other!
                     <br>You can even code your own commands using JavaScript if you want...
+                    <br>So just click on "Get Started" to get started right now and create your own bot!
                 </p>
             </div>
         </div>
