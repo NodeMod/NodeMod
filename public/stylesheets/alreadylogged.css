@@ -1,57 +1,57 @@
-            body {
-                /*background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(26, 26, 26) 100%) */
-                background-color: #141414; 
-                font-family: 'Roboto', sans-serif;
-                color: white;
-            }
+body {
+    /*background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(26, 26, 26) 100%) */
+    background-color: #141414; 
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
 
-            .titleDivContainer {
-                text-align: center;
-            }
+.titleDivContainer {
+    text-align: center;
+}
 
-            .titleDiv {
-                border-radius: 10px;
-                width: 100%;
-                height: 350px;
-                text-align: center;
-            }
+.titleDiv {
+    border-radius: 10px;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+}
 
-            .title {
-                padding-top: 10px;
-                text-align: center;
-                font-size: 80px;
-            }
+.title {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 80px;
+}
 
-            .description {
-                padding-top: 10px;
-                font-size: 35px;
-            }
+.description {
+    padding-top: 10px;
+    font-size: 35px;
+}
 
-            .goBackButton {
-                background-color: rgb(90, 90, 233);
-                border-radius: 10px;
-                color: white;
-                width: 160px;
-                height: 60px;
-                font-size: 25px;
-                border-color: transparent;
-                transition: 0.2s;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 500;
-            }
+.goBackButton {
+    background-color: rgb(90, 90, 233);
+    border-radius: 10px;
+    color: white;
+    width: 160px;
+    height: 60px;
+    font-size: 25px;
+    border-color: transparent;
+    transition: 0.2s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
 
-            .goBackButton:hover {
-                transition: 0.3s;
-                background-color: #7289da;
-                cursor: pointer;
-            }
+.goBackButton:hover {
+    transition: 0.3s;
+    background-color: #7289da;
+    cursor: pointer;
+}
 
-            .avatar {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-            }
-            
-            .loggedIn {
-                font-size: 50px;
-            }
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.loggedIn {
+    font-size: 50px;
+}
