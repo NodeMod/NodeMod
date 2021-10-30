@@ -29,7 +29,7 @@ passport.use(new DiscordStrategy({
                 discordId: profile.id,
                 username: profile.username,
                 discriminator: profile.discriminator,
-                avatar: profile.avatar
+                avatar: "https://cdn.discordapp.com/avatars/"+profile.id+"/"+profile.avatar+".png",
             });
             const savedUser = await newUser.save();
             done(null, savedUser);
