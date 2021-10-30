@@ -13,7 +13,9 @@ function isAuthorized(req, res, next) {
 
 router.get('/', isAuthorized, (req, res) => {
     res.render("dashboard", {
-        username: req.user.username
+        username: req.user.username,
+        discriminator: req.user.discriminator,
+        avatar: req.user.avatar,
     });
 });
 
