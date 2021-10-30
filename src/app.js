@@ -37,7 +37,9 @@ function isAuthorized(req, res, next) {
     if(req.user) {
         console.log(req.user);
         res.render("loggedin", {
-            username: req.user.username
+            username: req.user.username,
+            discriminator: req.user.discriminator,
+            avatar: req.user.avatar,
         });
     } else {
         res.render("noaccount");
