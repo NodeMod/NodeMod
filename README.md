@@ -1,10 +1,15 @@
-# NodeMod
-The source code of NodeMod: The powerful bot hosting. Free. Forever.
+<img src="https://o.remove.bg/downloads/7c24e650-631f-4a1a-8d70-f34ff5da7abb/Nodemod__1_-removebg-preview.png" width="300" height="90">
 
 # About
+NodeMod is a powerful bot hosting and making solution<br>
+It let users to create bots and adding lot of customizations to them, there are some default costomizations/plugins like Moderation, Reaction Roles, Auto Roles, Voice Managing, Ticket System, Server Stats, Music Player and a lot more.<br>
+It also offers a command maker where you can create simple commands, but for more advanced commands, you can even code your own commands in JavaScript using our API.
+
+# API
+We are creating an API that you can use to code custom commands in your bots.
+[Go to API repository](https://github.com/NodeMod/NodeMod-API)
+
+# How are we creating NodeMod
+
 We started it recently we actually didn't do much, you are still developing this and it will take quite a while.<br>
-The service scripts are made in **Javascript** and the website will be made with **EJS** and **CSS**
-
-### **We are currently using Node.js, Express and MongoDB**
-
-<img src="https://nodejs.org/static/images/logo.svg" width="100" height="100"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" width="222" height="60">
+The service scripts are made in **JavaScript** using **Express, Node.js and MongoDB**
