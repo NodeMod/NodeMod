@@ -6,7 +6,9 @@ const passport = require('passport');
 function isAuthorized(req, res, next) {
     if(req.user) {
         res.render("alreadylogged", {
-            username: req.user.username
+            username: req.user.username,
+            discriminator: req.user.discriminator,
+            avatar: req.user.avatar,
         });
     } else {
         next();
@@ -16,12 +18,12 @@ function isAuthorized(req, res, next) {
 router.get('/', isAuthorized, passport.authenticate('discord'));
 router.get('/redirect', passport.authenticate('discord', {
     failureRedirect: '/',
-    successRedirect: '/'
+    successRedirect: '/dashboard'
 }));
 
 router.get('/logout', (req, res) => {
     if(req.user) {
-        res.logout();
+        req.logOut();
         res.redirect('/');
     } else {
         res.redirect('/');
