@@ -1,93 +1,93 @@
-            body {
-                /*background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(26, 26, 26) 100%) */
-                background-color: #141414; 
-                font-family: 'Roboto', sans-serif;
-                color: white;
-            }
+body {
+    /*background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(26, 26, 26) 100%) */
+    background-color: #141414; 
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
 
-            .header {
-                border-radius: 10px;
-                width: 100%;
-                height: 50px;
-                text-align: center;
-            }
+.header {
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
 
-            .headerButton {
-                background-color: transparent;
-                border-radius: 10px;
-                color: white;
-                width: 160px;
-                height: 50px;
-                font-size: 16px;
-                border-color: transparent;
-                transition: 0.2s;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 500;
-            }
+.headerButton {
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+    border-color: transparent;
+    transition: 0.2s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
 
-            .headerButton:hover {
-                transition: 0.3s;
-                background-color: #7289da;
-                cursor: pointer;
-            }
+.headerButton:hover {
+    transition: 0.3s;
+    background-color: #7289da;
+    cursor: pointer;
+}
 
-            .dashboardDivContainer {
-                text-align: center;
-            }
+.dashboardDivContainer {
+    text-align: center;
+}
 
-            .dashboardDiv {
-                width: 100%;
-                height: 100%;
-                text-align: center;
-            }
+.dashboardDiv {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
 
-            .title {
-                padding-top: 10px;
-                text-align: center;
-                font-size: 110px;
-            }
+.title {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 110px;
+}
 
-            .description {
-                font-size: 50px;
-            }
+.description {
+    font-size: 50px;
+}
 
-            .botsDescription {
-                font-size: 40px;
-            }
+.botsDescription {
+    font-size: 40px;
+}
 
-            .botsButton {
-                background-color: rgb(90, 90, 233);
-                border-radius: 10px;
-                color: white;
-                width: 160px;
-                height: 60px;
-                font-size: 25px;
-                border-color: transparent;
-                transition: 0.2s;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 500;
-            }
+.botsButton {
+    background-color: rgb(90, 90, 233);
+    border-radius: 10px;
+    color: white;
+    width: 160px;
+    height: 60px;
+    font-size: 25px;
+    border-color: transparent;
+    transition: 0.2s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
 
-            .botsButton:hover {
-                transition: 0.3s;
-                background-color: #7289da;
-                cursor: pointer;
-            }
+.botsButton:hover {
+    transition: 0.3s;
+    background-color: #7289da;
+    cursor: pointer;
+}
 
-            .container {
-                padding-top: 50px;
-            }
+.container {
+    padding-top: 50px;
+}
 
-            .background {
-                border-radius: 50px;
-                background-color: #080808;
-                width: 100%;
-                height: 336px;
-                text-align: center;
-            }
+.background {
+    border-radius: 50px;
+    background-color: #080808;
+    width: 100%;
+    height: 336px;
+    text-align: center;
+}
 
-            .avatar {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-            }
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
