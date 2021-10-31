@@ -9,7 +9,7 @@ It also offers a command maker where you can create simple commands, but for mor
 We are creating an API that you can use to code custom commands in your bots.
 [Go to API repository](https://github.com/NodeMod/NodeMod-API)
 
-# How are we creating NodeMod
+# How we are creating NodeMod
 
 We started it recently we actually didn't do much, you are still developing this and it will take quite a while.<br>
 The service scripts are made in **JavaScript** using **Express, Node.js and MongoDB**
