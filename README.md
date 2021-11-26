@@ -1,4 +1,4 @@
-<img src="https://o.remove.bg/downloads/7c24e650-631f-4a1a-8d70-f34ff5da7abb/Nodemod__1_-removebg-preview.png" width="300" height="90">
+<img src="./nodemod.png" width="300" height="90">
 
 # About
 NodeMod is a powerful bot hosting and making solution<br>
